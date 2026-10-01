@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map & Filter Exercises</title>
+</head>
+
+<body>
+
+    <h1>Map & Filter Exercises</h1>
+
+    <p>Open the browser console to see the JavaScript answers.</p>
+
+    <script>
+
+        // ==========================================
+        // MAP & FILTER EXERCISES
+        // ==========================================
+
+        // Example 1: Double every number
+        const numbers = [1, 2, 3, 4, 5];
+
+        const doubledNumbers = numbers.map(function(number) {
+            return number * 2;
+        })
+
+        console.log("Doubled Numbers:", doubledNumbers);
+
+
+        // Example 2: Convert names to uppercase
+        const names = ["ali", "ahmed", "sara", "fatima"];
+
+        const upperCaseNames = names.map(function(name) {
+            return name.toUpperCase();
+        });
+
+        console.log("Uppercase Names:", upperCaseNames);
+
+
+        // Example 3: Get names of students
+        const students = [
+            { name: "Ali", age: 18 },
+            { name: "Ahmed", age: 19 },
+            { name: "Sara", age: 17 }
+        ];
+
+        const studentNames = students.map(function(student) {
+            return student.name;
+        });
+
+        console.log("Student Names:", studentNames);
+
+
+        // Example 4: Get students above 18
+        const adults = students.filter(function(student) {
+            return student.age >= 18;
+        });
+
+        console.log("Students 18 or older:", adults);
+
+
+        // Example 5: Get even numbers
+        const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        const evenNumbers = numbers2.filter(function(number) {
+            return number % 2 === 0;
+        });
+
+        console.log("Even Numbers:", evenNumbers);
+
+
+        // Example 6: Get numbers greater than 5
+        const greaterThanFive = numbers2.filter(function(number) {
+            return number > 5;
+        });
+
+        console.log("Numbers greater than 5:", greaterThanFive);
+
+
+        // Example 7: Add 10 to every number
+        const addedNumbers = numbers2.map(function(number) {
+            return number + 10;
+        });
+
+        console.log("Numbers + 10:", addedNumbers);
+
+
+        // Example 8: Get products cheaper than 100
+        const products = [
+            { name: "Laptop", price: 500 },
+            { name: "Mouse", price: 50 },
+            { name: "Keyboard", price: 80 },
+            { name: "Monitor", price: 200 }
+        ];
+
+        const cheapProducts = products.filter(function(product) {
+            return product.price < 100;
+        });
+
+        console.log("Products under 100:", cheapProducts);
+
+
+        // Example 9: Get product names
+        const productNames = products.map(function(product) {
+            return product.name;
+        });
+
+        console.log("Product Names:", productNames);
+
+
+        // Example 10: Square every number
+        const squaredNumbers = numbers2.map(function(number) {
+            return number * number;
+        });
+
+        console.log("Squared Numbers:", squaredNumbers);
+
+
+        // ==========================================
+        // END OF ASSIGNMENT
+        // ==========================================
+
+    </script>
+
+</body>
+</html>
